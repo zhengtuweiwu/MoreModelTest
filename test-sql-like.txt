@@ -1,0 +1,41 @@
+﻿Be sure to select firm, unblemished fruit.
+She selected a book from one of the shelves.
+New judges were quickly selected from among the city's lawyers.
+selected works from this collection
+Marble was selected as the most suitable material for the worktops.
+the photo selected for the front cover of the magazine
+People need to be able to select from a range of therapies.
+It can help to select sweaters made out of materials that won’t ravel.
+Select a couple of ingredients and add them to a tried-and-tested recipe of your own.
+<select><option value ="volvo">Volvo</option><option value ="saab">Saab</option><option value="opel">Opel</option><option value="audi">Audi</option></select>
+Insert a small knife into the top of the chicken breast to loosen the skin.
+(broadcasting) a local announcement inserted into a network program
+The gap was large enough for him to insert a finger.
+Enter your password.
+No-one could use the computer unless they had a password.
+make or become different in some particular way, without permanently losing one's or its former characteristics or essence;
+insert words into texts, often falsifying it thereby
+The government is ready to declare a permanent ceasefire.
+Newman himself had previously declared against the practice.
+The Catalans declared for Charles and a civil war erupted in Valencia and Aragon.
+The British government introduced a watered-down version of the proposals.
+The review body has produced a truncated version of its annual report.
+Apache HTTP Server version 2.4.39 or newer is required in order to operate a TLS 1.3 web server with OpenSSL 1.1.1.
+The Apache Software Foundation and the Apache HTTP Server Project are pleased to announce the release of version 2.4.39 of the Apache HTTP Server ("httpd").
+select 字段 from 表名1 where 条件 union
+Replace UNION ALL with UNION where a sync could change underlying data in the middle
+during a UNION ALL underlying data in the queried tables can change, that means we can get any sort of random results (duplicates or missing results) from those queries.
+select * from (union)后面可以加where条件吗?
+select  字段1，字段2，字段3，count（姓名）from 表   where 字段3=0（统计为0的总数）   group by 字段1，字段2，字段3，姓名
+字段1，字段2，字段3，count（姓名）from 表   where 字段3=1（统计为1的总数）   group by 字段1，字段2，字段3，姓名
+Where Are You Now - Union J
+Person[] p2 = p1.Where(c => string.IsNullOrEmpty(c.Error)).Select(c => new Person { Name = c.Name, Age = c.Age }).ToArray()Union().Where(d => !string.IsNullOrEmpty(d.Error)).Select(d => new Person { Error = d.Error }).ToArray()
+minus 可用于排除俩表相同的数据的id。有俩表a，b。其中相同的数据是c。select 字段 from a minus select 字段 from b，a where a.id=b.id
+for (int i = 0; i < 133; i++){char a = (char)i;Console.WriteLine("Char("+i+")----"+a);}
+for (int i = 0; i < 133; i++){char a = (char)i;Console.WriteLine("Char("+i+")----"+a);}
+char ch = (char) i;  这一段语句的意思是什么？在“=”后面的“（char）”的作用是什么?麻烦各位高手帮忙解答一下
+ORDER ONLINE [LIMITED AVAILABILITY] DELIVERYPICKUP WANT CHARLEYS? GET YOUR FIX AND THEN SOME Join our eClub 
+dw_child.setfilter("name like '%" + data + "%'  or  size1 like '%" + data + "%'") 
+dw_1.setfilter("aaid like '%" + ls_rtn + "%' or bb like '%" + ls_rtn + "%'")
+Goal Setting Formula How To Set And Achieve Your Goals Like A 
+Could not set parameters for mapping: ParameterMapping

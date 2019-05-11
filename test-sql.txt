@@ -1,0 +1,25 @@
+﻿select * from db;
+select count(*) from db;
+CREATE USER 'user'@'localhost' IDENTIFIED BY 'somePassword';
+CREATE USER 'user_test'@'localhost' IDENTIFIED BY 'somePassword_test';
+GRANT ALL PRIVILEGES ON  `run_%`.* TO 'user'@'localhost';
+GRANT ALL PRIVILEGES ON  `test_%`.* TO 'user_test'@'localhost';
+CREATE TABLE `sectors` AS SELECT `id`, `idate`, `name` FROM `news` WHERE 1 = 0;
+ALTER TABLE `sectors` ADD PRIMARY KEY(`id`), MODIFY `id` INT(11)UNSIGNED NOT NULL AUTO_INCREMENT;
+INSERT INTO `sectors` SELECT * FROM `news`;
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) value      ('Степлер SAX 49',1238,455,325);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Степлер SAX 51',1245,410,1550);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Senator Spring',4589,398,530);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Pilot',4593,355,335);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Parker Sonet',4599,223,115);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Parker Insignia',4600,131,580);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Parker Frontier',4611,110,123);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Ручка Ico Omega',4678,95,525);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Тонер-картридж HP C7115X',5889,23,305);
+INSERT INTO `items`(`name`,`art`,`count_sold`,`count_boxes`) values ('Тонер-картридж HPC8061A',5890,4,1800);
+CREATE TABLE `schedule` (`date` DATE NOT NULL,`user_id` INT(11) UNSIGNED NOT NULL,
+  PRIMARY KEY (`date`,`user_id`)) ENGINE=INNODB;
+SELECT MAX(`date`) AS `prev_date` FROM `schedule` WHERE `date` < '2015-04-18';
+SELECT MIN(`date`) AS `next_date` FROM `schedule` WHERE `date` > '2015-04-18';
+SET @counter := 0;
+SELECT `company`, @counter AS `counter` FROM (SELECT `company` FROM `regions` WHERE `is_active` = 1 GROUP BY `region`) AS `dummy_alias` WHERE LEAST(0, @counter := @counter + 1) = 0 ORDER BY `counter`;
